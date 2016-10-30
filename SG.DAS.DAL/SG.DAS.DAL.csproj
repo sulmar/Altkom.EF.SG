@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC6AF269-1672-4296-A5CD-83012F9A6F02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SG.DAS.DAL</RootNamespace>
+    <AssemblyName>SG.DAS.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurations\SystemConfiguration.cs" />
+    <Compile Include="Configurations\TaskConfiguration.cs" />
+    <Compile Include="Configurations\TaskTypeConfiguration.cs" />
+    <Compile Include="Configurations\UserConfiguration.cs" />
+    <Compile Include="Conventions\DateTime2Convention.cs" />
+    <Compile Include="Conventions\DecimalConvention.cs" />
+    <Compile Include="Conventions\NameConvention.cs" />
+    <Compile Include="Conventions\NoteConvention.cs" />
+    <Compile Include="DASContext.cs" />
+    <Compile Include="DASContext.Views.cs" />
+    <Compile Include="DASContextExt.cs" />
+    <Compile Include="DbContextExtensions.cs" />
+    <Compile Include="Migrations\201404281006173_InitialCreate.cs" />
+    <Compile Include="Migrations\201404281006173_InitialCreate.Designer.cs">
+      <DependentUpon>201404281006173_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281054518_ChangeFirstNameUser.cs" />
+    <Compile Include="Migrations\201404281054518_ChangeFirstNameUser.Designer.cs">
+      <DependentUpon>201404281054518_ChangeFirstNameUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281215524_AddRequiredFirstNameAndLastNameUser.cs" />
+    <Compile Include="Migrations\201404281215524_AddRequiredFirstNameAndLastNameUser.Designer.cs">
+      <DependentUpon>201404281215524_AddRequiredFirstNameAndLastNameUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281220180_AddRequiredToSystem.cs" />
+    <Compile Include="Migrations\201404281220180_AddRequiredToSystem.Designer.cs">
+      <DependentUpon>201404281220180_AddRequiredToSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281256441_AddAddressToUser.cs" />
+    <Compile Include="Migrations\201404281256441_AddAddressToUser.Designer.cs">
+      <DependentUpon>201404281256441_AddAddressToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281305255_ChangeLastNameUser.cs" />
+    <Compile Include="Migrations\201404281305255_ChangeLastNameUser.Designer.cs">
+      <DependentUpon>201404281305255_ChangeLastNameUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281326566_AutoIncrementOffTaskType.cs" />
+    <Compile Include="Migrations\201404281326566_AutoIncrementOffTaskType.Designer.cs">
+      <DependentUpon>201404281326566_AutoIncrementOffTaskType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281340130_ChangeDeadLineTask.cs" />
+    <Compile Include="Migrations\201404281340130_ChangeDeadLineTask.Designer.cs">
+      <DependentUpon>201404281340130_ChangeDeadLineTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281418485_AddCreateDatToTask.cs" />
+    <Compile Include="Migrations\201404281418485_AddCreateDatToTask.Designer.cs">
+      <DependentUpon>201404281418485_AddCreateDatToTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281425019_AddName.cs" />
+    <Compile Include="Migrations\201404281425019_AddName.Designer.cs">
+      <DependentUpon>201404281425019_AddName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281433032_AddNote.cs" />
+    <Compile Include="Migrations\201404281433032_AddNote.Designer.cs">
+      <DependentUpon>201404281433032_AddNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404281440307_AddStoredProceduresToTask.cs" />
+    <Compile Include="Migrations\201404281440307_AddStoredProceduresToTask.Designer.cs">
+      <DependentUpon>201404281440307_AddStoredProceduresToTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404290726262_AddBirthdayToUser.cs" />
+    <Compile Include="Migrations\201404290726262_AddBirthdayToUser.Designer.cs">
+      <DependentUpon>201404290726262_AddBirthdayToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404290733086_AddNoteToUser.cs" />
+    <Compile Include="Migrations\201404290733086_AddNoteToUser.Designer.cs">
+      <DependentUpon>201404290733086_AddNoteToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404290810503_AddPositionToUser.cs" />
+    <Compile Include="Migrations\201404290810503_AddPositionToUser.Designer.cs">
+      <DependentUpon>201404290810503_AddPositionToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404290954267_RenameSystemToAppSystem.cs" />
+    <Compile Include="Migrations\201404290954267_RenameSystemToAppSystem.Designer.cs">
+      <DependentUpon>201404290954267_RenameSystemToAppSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404291220162_SplitUser.cs" />
+    <Compile Include="Migrations\201404291220162_SplitUser.Designer.cs">
+      <DependentUpon>201404291220162_SplitUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404291339456_AddTimestampToTask.cs" />
+    <Compile Include="Migrations\201404291339456_AddTimestampToTask.Designer.cs">
+      <DependentUpon>201404291339456_AddTimestampToTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404300947317_AddAudits.cs" />
+    <Compile Include="Migrations\201404300947317_AddAudits.Designer.cs">
+      <DependentUpon>201404300947317_AddAudits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PrintToday.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SG.DAS.Model\SG.DAS.Model.csproj">
+      <Project>{33b5dc60-ea71-4292-8787-4edde627cd6b}</Project>
+      <Name>SG.DAS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201404281006173_InitialCreate.resx">
+      <DependentUpon>201404281006173_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281054518_ChangeFirstNameUser.resx">
+      <DependentUpon>201404281054518_ChangeFirstNameUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281215524_AddRequiredFirstNameAndLastNameUser.resx">
+      <DependentUpon>201404281215524_AddRequiredFirstNameAndLastNameUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281220180_AddRequiredToSystem.resx">
+      <DependentUpon>201404281220180_AddRequiredToSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281256441_AddAddressToUser.resx">
+      <DependentUpon>201404281256441_AddAddressToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281305255_ChangeLastNameUser.resx">
+      <DependentUpon>201404281305255_ChangeLastNameUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281326566_AutoIncrementOffTaskType.resx">
+      <DependentUpon>201404281326566_AutoIncrementOffTaskType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281340130_ChangeDeadLineTask.resx">
+      <DependentUpon>201404281340130_ChangeDeadLineTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281418485_AddCreateDatToTask.resx">
+      <DependentUpon>201404281418485_AddCreateDatToTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281425019_AddName.resx">
+      <DependentUpon>201404281425019_AddName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281433032_AddNote.resx">
+      <DependentUpon>201404281433032_AddNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404281440307_AddStoredProceduresToTask.resx">
+      <DependentUpon>201404281440307_AddStoredProceduresToTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404290726262_AddBirthdayToUser.resx">
+      <DependentUpon>201404290726262_AddBirthdayToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404290733086_AddNoteToUser.resx">
+      <DependentUpon>201404290733086_AddNoteToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404290810503_AddPositionToUser.resx">
+      <DependentUpon>201404290810503_AddPositionToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404290954267_RenameSystemToAppSystem.resx">
+      <DependentUpon>201404290954267_RenameSystemToAppSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404291220162_SplitUser.resx">
+      <DependentUpon>201404291220162_SplitUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404291339456_AddTimestampToTask.resx">
+      <DependentUpon>201404291339456_AddTimestampToTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404300947317_AddAudits.resx">
+      <DependentUpon>201404300947317_AddAudits.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

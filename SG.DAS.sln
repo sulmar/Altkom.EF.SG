@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.DAS.Console", "SG.DAS.Console\SG.DAS.Console.csproj", "{2B879E8D-692C-4ED9-8785-FBC3DC468E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.DAS.Model", "SG.DAS.Model\SG.DAS.Model.csproj", "{33B5DC60-EA71-4292-8787-4EDDE627CD6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.DAS.DAL", "SG.DAS.DAL\SG.DAS.DAL.csproj", "{DC6AF269-1672-4296-A5CD-83012F9A6F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG.DAS.StoredProcedures", "SG.DAS.StoredProcedures\SG.DAS.StoredProcedures.csproj", "{599D9DA3-8073-4DF8-8252-F8C18EC36DAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B879E8D-692C-4ED9-8785-FBC3DC468E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B879E8D-692C-4ED9-8785-FBC3DC468E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B879E8D-692C-4ED9-8785-FBC3DC468E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B879E8D-692C-4ED9-8785-FBC3DC468E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B5DC60-EA71-4292-8787-4EDDE627CD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B5DC60-EA71-4292-8787-4EDDE627CD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B5DC60-EA71-4292-8787-4EDDE627CD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B5DC60-EA71-4292-8787-4EDDE627CD6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC6AF269-1672-4296-A5CD-83012F9A6F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC6AF269-1672-4296-A5CD-83012F9A6F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC6AF269-1672-4296-A5CD-83012F9A6F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC6AF269-1672-4296-A5CD-83012F9A6F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599D9DA3-8073-4DF8-8252-F8C18EC36DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599D9DA3-8073-4DF8-8252-F8C18EC36DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599D9DA3-8073-4DF8-8252-F8C18EC36DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599D9DA3-8073-4DF8-8252-F8C18EC36DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
